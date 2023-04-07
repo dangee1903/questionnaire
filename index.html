@@ -116,11 +116,10 @@
       $(function () {
         $("form").submit(function () {
           const name = $('input[name="name"]').val();
-          const bangou = $('input[name="bangou"]').val();
           const temperature = $('input[name="temperature"]').val();
           const shushoujou = $('input[name="shushoujou"]').val();
           const family = $('input[name="family"]').val();
-          const msg = `Gửi khảo sát\n${name}\n${bangou}\n${temperature}\n${shushoujou}\n${family}`;
+          const msg = `Gửi khảo sát\n${name}\n${temperature}\n${shushoujou}\n${family}`;
           sendText(msg);
           return false;
         });
