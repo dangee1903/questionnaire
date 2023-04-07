@@ -119,7 +119,7 @@
           const temperature = $('input[name="temperature"]').val();
           const shushoujou = $('input[name="shushoujou"]').val();
           const family = $('input[name="family"]').val();
-          const msg = `Gửi khảo sát\n${name}\n${temperature}\n${shushoujou}\n${family}`;
+          const msg = `問診票回答\n${name}\n${temperature}\n${shushoujou}\n${family}`;
           sendText(msg);
           return false;
         });
